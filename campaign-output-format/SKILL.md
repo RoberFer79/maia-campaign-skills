@@ -11,8 +11,8 @@ status: active
 
 Este skill define dos artefactos principales y los outputs visuales asociados:
 
-1. **Estrategia por Canal** (`media_strategy.json`) -- output del Planner. Acompanado de `media_strategy_v<N>.docx` (narrativo visual) y 8 one-pagers HTML: `calendario_<subcorriente>_v<N>.html` y `brief_canales_<subcorriente>_v<N>.html` para cada sub-corriente (Growth, Value, Dispositivos), mas 2 globales: `calendario_canales_global_v<N>.html` y `carga_soporte_global_v<N>.html`.
-2. **Estrategia Creativa** (`campaign_creative-strategy.json`) -- output del Creative Copywriter. Acompanado de `campaign_creative-strategy_v<N>.docx` (narrativo visual) y `campaign_creative-strategy_v<N>.html` (mapa de territorios creativos). Las campanas se agrupan por sub-corriente (Growth, Value, Dispositivos).
+1. **Estrategia por Canal** (`media_strategy.json`) -- output del Planner. Acompanado de `media_strategy_v<N>.docx` (narrativo visual) y 8 one-pagers HTML: `calendario_<subcorriente>_v<N>.html` y `brief_canales_territorio_<subcorriente>_v<N>.html` para cada sub-corriente (Growth, Value, Dispositivos), mas 2 globales: `calendario_canales_global_v<N>.html` y `carga_soporte_global_v<N>.html`.
+2. **Estrategia Creativa** (`campaign_creative-strategy.json`) -- output del Creative Copywriter. Acompanado de `campaign_creative-strategy_v<N>.docx` (narrativo visual) y 1 HTML por sub-corriente (`campaign_creative-strategy_<sub>_v<N>.html`): mapa de territorios creativos, copies y flags filtrados por stream. Se generan solo los HTMLs de sub-corrientes que tengan territorios.
 
 Todos los JSON-parseables, versionados, trazables al Golden Briefing del que dependen.
 
@@ -188,7 +188,7 @@ Ademas del JSON y el .docx, el Planner produce 8 one-pagers HTML (6 por sub-corr
 | Archivo | Contenido |
 |---|---|
 | `calendario_<subcorriente>_v<N>.html` | Gantt semanal: territorios x semanas, barras coloreadas por sub-corriente, chips de medios |
-| `brief_canales_<subcorriente>_v<N>.html` | Matriz: territorios x canales (TV, Exterior, M+, BTL, Digital, Tienda PLV, Tienda Caballete), checks azules con especificacion |
+| `brief_canales_territorio_<subcorriente>_v<N>.html` | Matriz: territorios x canales (TV, Exterior, M+, BTL, Digital, Tienda PLV, Tienda Caballete), checks azules con especificacion |
 
 **Globales** (consolidan las 3 sub-corrientes):
 
