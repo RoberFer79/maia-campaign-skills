@@ -31,8 +31,8 @@ El cliente es el equipo de Comunicacion de Movistar (Telefonica). El operador es
 | strategist | Strategist | Traduce objetivos de negocio en estrategia de comunicacion: lectura estrategica, corrientes de demanda, jerarquia de territorios, audiencia, rol de canales | `golden_briefing_v<N>.json` + `.docx` + `estrategia_<stream>_v<N>.html` + `formulario_area_<stream>_v<N>.docx` + `resumen_territorios_enfoque_v<N>.html` (global) | `brief-quality-rubric` |
 | media-strategy | Planner | Recibe ambos briefs, desglosa en 3 sub-corrientes (Growth, Value, Dispositivos). Priorizacion territorial, tier, canales, comentarios expertos, tablas Movistar, etiquetado de inferencias | `media_strategy_v<N>.json` + `.docx` + 6 HTML por sub-corriente (`calendario_<sub>_v<N>.html`, `brief_canales_territorio_<sub>_v<N>.html`) + 2 globales (`calendario_canales_global_v<N>.html`, `carga_soporte_global_v<N>.html`) | `rol-medios-movistar` |
 | creative-copywriter | Creative Copywriter | Recibe output combinado del Planner, separa por sub-corriente (Growth, Value, Dispositivos). Concepto creativo y racional por territorio, copy bank con bajada por canal, scoring CRM por pieza | `campaign_creative-strategy_v<N>.json` + `.docx` + 1 HTML por sub-corriente (`campaign_creative-strategy_<sub>_v<N>.html`) | (ninguna exclusiva) |
-| campaign-design | Art Director | Selecciona piezas representativas por canal y sub-corriente, produce piezas presentables a cliente (HTML con slots + render PNG) con fotografia real generada y verificacion visual | HTML ensamblados + PNG verificados organizados por sub-corriente + `design_rationale.docx` consolidado | `movistar-visual-production`, `html-component-library`, `brand-visual-composition-movistar` |
-| campaign-manager | Campaign Manager | Cierre: checklist V01-V17, resumen ejecutivo, Campaign Kit | Resumen de cierre + Campaign Kit (consolida outputs de todos los agentes) | `validacion-maia-checklist`, `journey-canales-movistar` |
+| campaign-design | Art Director | Selecciona piezas representativas por canal y sub-corriente, produce piezas presentables a cliente (HTML con slots + render PNG) con fotografia real generada y verificacion visual | HTML ensamblados + PNG verificados organizados por sub-corriente + `design_rationale_<sub>.docx` por stream | `movistar-visual-production`, `html-component-library`, `brand-visual-composition-movistar` |
+| campaign-manager | Campaign Manager | Cierre: checklist V01-V17, resumen ejecutivo, Creative Proposal | `resumen-ejecutivo.html` + Creative Proposal (carpeta con outputs presentables a cliente) | `validacion-maia-checklist`, `journey-canales-movistar` |
 
 ---
 
@@ -53,7 +53,7 @@ Hay un gate humano despues de cada agente. El humano puede aprobar, pedir iterac
 - **A produce, humano aprueba o itera** (Gate A). El back-and-forth con el area es la norma. Un brief puede pasar a v3 o v4 antes de aprobarse.
 - **B produce, humano aprueba o itera** (Gate B). B incluye un campo `tier_justificacion` por canal que el humano audita.
 - **C produce, humano aprueba o itera** (Gate C). C incluye copy prototype por canal y scoring CRM por pieza. El humano aprueba y C pasa directamente a D.
-- **D produce, humano aprueba** (Gate D), y luego escala a **Cierre (Campaign Manager)**. El Campaign Manager ejecuta la checklist V01-V17 sobre el paquete completo, genera el resumen ejecutivo, consolida todos los outputs en un Campaign Kit entregable y activa la revision humana final.
+- **D produce, humano aprueba** (Gate D), y luego escala a **Cierre (Campaign Manager)**. El Campaign Manager ejecuta la checklist V01-V17 sobre el paquete completo, genera el resumen ejecutivo, ensambla la Creative Proposal (carpeta con los outputs presentables a cliente) y activa la revision humana final.
 
 En todos los gates, el humano tiene tres opciones: aprobar y pasar al siguiente, iterar con feedback, o devolver al agente anterior.
 
