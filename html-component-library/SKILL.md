@@ -986,7 +986,7 @@ D adapta la plantilla al caso: cambia copies, ajusta proporciones, aplica el tie
 - NO usar los colores antiguos (#019DF4, tipografia "Telefonica"). Si los encuentras en cualquier referencia, ignoralos y usa los tokens vigentes.
 - NO generar fotografias via API externa. D si produce SVG y composiciones HTML/CSS renderizables. Las fotografias van como placeholders semanticos con `data-prompt` para que produccion las complete.
 - NO reescribir copies del Estrategia Creativa. Usar los originales, flaggear si no caben.
-- NO crear disenos "creativos" que rompan los patrones de esta skill sin justificarlo en `design_rationale.md`.
+- NO crear disenos "creativos" que rompan los patrones de esta skill sin justificarlo en `design_rationale_<sub>.md`.
 - NO usar `border-radius: 4px`. Siempre 8px en digital (regla del brand book).
 - NO colocar texto con `<text>` como placeholder de logo. Usar los slots `{{LOGO_MARK}}` / `{{LOGO_MARK_INVERSE}}`.
 
@@ -996,7 +996,7 @@ Todos los contenedores en toda pieza tienen vertices redondeados a 8px en digita
 
 ---
 
-## 8. Estructura de design_rationale.md
+## 8. Estructura de design_rationale_<sub>.md
 
 Cada pieza viene acompanada de un rationale:
 
